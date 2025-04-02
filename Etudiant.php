@@ -1,8 +1,8 @@
 <?php
 
 class Etudiant {
-  public string $nom;
-  public array $notes;
+  private string $nom;
+  private array $notes;
 
   public function __construct(string $nom, array $notes) {
       $this->nom = $nom;
@@ -34,6 +34,12 @@ class Etudiant {
       else{
         return "Non Admis";
       }
+    }
+    public function getNom(){
+      return $this->nom;
+    }
+    public function getNotes(){
+      return $this->notes;
     }
     
 }

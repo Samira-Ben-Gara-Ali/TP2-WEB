@@ -21,11 +21,11 @@ $etudiants = [
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
           <div class="card-header bg-primary-subtle text-dark">
-            <h5 class="card-title"><?= $etudiant->nom ?></h5>
+            <h5 class="card-title"><?= $etudiant->getNom() ?></h5>
           </div>
           <div class="card-body">
             
-            <?php foreach ($etudiant->notes as $note){ 
+            <?php foreach ($etudiant->getNotes() as $note){ 
               
               if ($note < 10) {
                 $color = 'bg-danger-subtle text-dark';
