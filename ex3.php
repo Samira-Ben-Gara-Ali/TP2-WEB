@@ -1,13 +1,13 @@
 <?php
 include_once "autoload.php";
-$pokemon1 = new Pokemon(
+$pokemon1 = new PokemonFeu(
   "Pikachu",
   "images/pikachu.jpg",
   200,
   new AttackPokemon(10, 100, 2, 20)
 );
 
-$pokemon2 = new Pokemon(
+$pokemon2 = new PokemonEau(
   "Bulbizarre",
   "images/bulbizarre.jpg",
   200,
