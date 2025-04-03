@@ -1,5 +1,8 @@
 <?php
 class PokemonEau extends Pokemon{
+  public function __construct(string $name, string $url, int $hp, AttackPokemon $attackPokemon) {
+    parent::__construct($name, $url, $hp, $attackPokemon);
+  }
   public function attack(Pokemon $p){
   $atk=$this->attackPokemon->getAttackMinimal();
   $random = rand(1, 100);
