@@ -1,8 +1,15 @@
 <?php
 class Pokemon{
-  
-  public function __construct(private string $name,private string $url,private int $hp,private AttackPokemon $attackPokemon)
-  {
+  private string $name;
+  private string $url;
+  private int $hp;
+  protected AttackPokemon $attackPokemon;
+
+  public function __construct(string $name, string $url, int $hp, AttackPokemon $attackPokemon) {
+      $this->name = $name;
+      $this->url = $url;
+      $this->hp = $hp;
+      $this->attackPokemon = $attackPokemon;
   }
 
   
