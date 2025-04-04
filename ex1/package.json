@@ -1,5 +1,5 @@
 {
-  "name": "tp_php",
+  "name": "ex1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.5"
   }
 }
